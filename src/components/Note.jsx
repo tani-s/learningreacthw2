@@ -2,11 +2,12 @@ import React from "react";
 import notes from "../notes";
 
 function Note() {
-  return (
+  return (notes.map( (note) => 
     <div class="note">
-    <h1>Note title</h1>
-    <p>Note content</p>
+    <h1>{note.title}</h1>
+    <p>{note.content}</p>
     </div>
+  )
   );
 }
 
